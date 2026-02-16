@@ -7,17 +7,7 @@ function createBtnReportChanges() {
         return btnReportChanges;
     }
 
-    function placeBtnReportChanges() {
-        const toolbar = document.querySelector(".view-toolbar.grid-actions.clearfix");
-        if (toolbar) {
-            toolbar.classList.add("pt-first-toolbar");
-
-            if (!toolbar.querySelector(".pt_btn.pt_action_fsrequest")) {
-                const btnReportChanges = createBtn();
-                toolbar.appendChild(btnReportChanges);                
-            }
-        }
-    };
+   
 
     document.addEventListener("DOMContentLoaded", function () {
         placeBtnReportChanges()
